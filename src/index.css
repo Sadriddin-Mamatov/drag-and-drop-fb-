@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-bar {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border:1px solid #ccc;
+}
+
+.draggable-item {
+  cursor: grab;
+  width: 100%;
+}
+
+.resize-handle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: #007bff;
+  cursor: nwse-resize;
+  border-radius: 50%;
+}
+
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+
+.view-only-container img {
+  margin: 30px;
+}
+.right-bar-wrapper{
+  width: 80%;
+
+}
+.right-bar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  height: 100%;
+  gap: 30px;
+}
+.main-page-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.right-bar-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: #eaeaea;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  border-radius: 8px;
+}
+
+.save-button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background: #0056b3;
+}
+
