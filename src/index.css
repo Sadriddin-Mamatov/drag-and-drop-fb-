@@ -7,6 +7,7 @@
 .app-container {
   display: flex;
   height: 100vh;
+  background: #f9f9f9;
 }
 
 .left-bar {
@@ -25,24 +26,19 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 15px;
-  height: 15px;
-  background: #007bff;
+  width: 10px;
+  height: 10px;
+  background: #000;
   cursor: nwse-resize;
-  border-radius: 50%;
 }
 
 .delete-button {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: red;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .navbar{
@@ -62,9 +58,8 @@
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  height: 100%;
+  border:none;
+  border-top: 1px solid #ddd;
   gap: 30px;
 }
 .main-page-image{

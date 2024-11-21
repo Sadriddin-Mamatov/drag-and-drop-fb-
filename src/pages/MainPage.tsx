@@ -1,13 +1,14 @@
 import React from "react";
-import { useDrop } from "react-dnd";
-import { MainPageItemProps } from "../types";
+import {useDrop} from "react-dnd";
+import {MainPageItemProps} from "../types";
+import {FaTrashAlt} from "react-icons/fa";
 
 interface MainPageProps {
     items: MainPageItemProps[];
     setItems: React.Dispatch<React.SetStateAction<MainPageItemProps[]>>;
 }
 
-const MainPage: React.FC<MainPageProps> = ({ items, setItems }) => {
+const MainPage: React.FC<MainPageProps> = ({items, setItems}) => {
 
     const [, drop] = useDrop(() => ({
         accept: "IMAGE",
@@ -89,12 +90,10 @@ const MainPage: React.FC<MainPageProps> = ({ items, setItems }) => {
                             document.addEventListener("mouseup", handleMouseUp);
                         }}
                     ></div>
-                    <button
+                    <FaTrashAlt
                         className="delete-button"
                         onClick={() => handleDelete(item.id)}
-                    >
-                        X
-                    </button>
+                    />
                 </div>
             ))}
         </div>

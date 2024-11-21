@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { DndProvider } from "react-dnd";
-import { HTML5Backend } from "react-dnd-html5-backend";
+import React, {useState, useEffect} from "react";
+import {DndProvider} from "react-dnd";
+import {HTML5Backend} from "react-dnd-html5-backend";
 import SideBar from "./components/SideBar";
-import {MainPageItemProps} from "./types"
 import MainPage from "./pages/MainPage";
-
+import {MainPageItemProps} from "./types"
 
 
 const App: React.FC = () => {
@@ -31,7 +30,7 @@ const App: React.FC = () => {
                         key={item.id}
                         src={item.src}
                         alt="selected image"
-                        style={{ width: item.width, height: item.height }}
+                        style={{width: item.width, height: item.height}}
                     />
                 ))}
             </div>
