@@ -29,7 +29,7 @@ const App: React.FC = () => {
                     <img
                         key={item.id}
                         src={item.src}
-                        alt="selected image"
+                        alt={item.alt}
                         style={{width: item.width, height: item.height}}
                     />
                 ))}
