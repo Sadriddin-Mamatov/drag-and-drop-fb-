@@ -61,7 +61,9 @@
   border:none;
   border-top: 1px solid #ddd;
   gap: 30px;
-  height: 80%;
+  min-height: 80%;
+  align-items: start;
+  justify-content: start;
 }
 .main-page-image{
   width: 100%;

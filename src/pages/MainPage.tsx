@@ -16,7 +16,7 @@ const MainPage: React.FC<MainPageProps> = ({items, setItems}) => {
             const newItem: MainPageItemProps = {
                 id: item.id + Math.random(),
                 src: item.src,
-                width: 100,
+                width: 200,
                 height: 100,
             };
             setItems((prev) => [...prev, newItem]);
